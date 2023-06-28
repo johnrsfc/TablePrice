@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  background: #1D539E;
+  position: relative;
+}
+header h1, header p {
+  color: #fff;
+  font-size: 4rem;
+}
+header p {
+  font-size: 1.3rem;
+  padding: 1rem 30rem 1rem 30rem;
+  text-align: center;
+}
+
+.pricingTable, header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 380px;
+}
+.pricingTable .content, header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.pricingTable .box, header .box {
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 1rem;
+  position: relative;
+  border-radius: 0.9rem;
+}
+.pricingTable .box .card p, header .box .card p {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.pricingTable .box .card .recomendationPlanOne, .pricingTable .box .card .recomendationPlanTwo, .pricingTable .box .card .recomendationPlanThree, header .box .card .recomendationPlanOne, header .box .card .recomendationPlanTwo, header .box .card .recomendationPlanThree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFCC29;
+  padding: 1rem 0 1rem 0;
+  border-radius: 0.9rem;
+}
+.pricingTable .box .card .recomendationPlanOne p, .pricingTable .box .card .recomendationPlanOne span, .pricingTable .box .card .recomendationPlanTwo p, .pricingTable .box .card .recomendationPlanTwo span, .pricingTable .box .card .recomendationPlanThree p, .pricingTable .box .card .recomendationPlanThree span, header .box .card .recomendationPlanOne p, header .box .card .recomendationPlanOne span, header .box .card .recomendationPlanTwo p, header .box .card .recomendationPlanTwo span, header .box .card .recomendationPlanThree p, header .box .card .recomendationPlanThree span {
+  margin: 1rem;
+  color: #1D539E;
+}
+.pricingTable .box .card .recomendationPlanOne span, .pricingTable .box .card .recomendationPlanTwo span, .pricingTable .box .card .recomendationPlanThree span, header .box .card .recomendationPlanOne span, header .box .card .recomendationPlanTwo span, header .box .card .recomendationPlanThree span {
+  background: #1D539E;
+  color: #fff;
+  padding: 0.3rem 0.9rem 0.3rem 0.9rem;
+  border-radius: 0.9rem;
+}
+.pricingTable .box .card .recomendationPlanOne, .pricingTable .box .card .recomendationPlanThree, header .box .card .recomendationPlanOne, header .box .card .recomendationPlanThree {
+  background: #fff;
+}
+.pricingTable .box .card .board, header .box .card .board {
+  border: 1px solid #EEEEEE;
+}
+.pricingTable .box .card ul li, header .box .card ul li {
+  margin: 1rem;
+  list-style: none;
+}
+.pricingTable .box .card ul li i, header .box .card ul li i {
+  margin-right: 0.6rem;
+  color: #59CE9F;
+}
+.pricingTable .box .card .btn, header .box .card .btn {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  border: 1px solid #1D539E;
+  border-radius: 0.7rem;
+  margin: 0 5rem 1rem 5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.pricingTable .box .card .btn-different-color, header .box .card .btn-different-color {
+  background: #1D539E;
+  color: #fff;
+}
+.pricingTable .box .card .btn:hover, header .box .card .btn:hover {
+  opacity: 0.2;
+}
+.pricingTable .box .t-header h1, header .box .t-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+.pricingTable .box .t-header h1 span, header .box .t-header h1 span {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #828799;
+}
+.pricingTable .box .t-header p, header .box .t-header p {
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 30vh;
+  }
+  header p {
+    padding: 0;
+    font-size: 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  .pricingTable {
+    height: 100%;
+  }
+  .pricingTable .content {
+    flex-direction: column;
+    position: relative;
+  }
+  .pricingTable .box {
+    width: 350px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
